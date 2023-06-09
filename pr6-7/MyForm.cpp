@@ -66,8 +66,7 @@ System::Void pr67::MyForm::show_file3(System::Object^ sender, System::EventArgs^
 		int number = Convert::ToInt32(n);
 		numbers_file3->Items->Clear();
 		file3->clear();
-		file3->write_from_another(number, file1);
-		file3->write_from_another(number, file2);
+		file3->write_from_another(number, file1, file2);
 		int size;
 		int* numbers = file3->read(size);
 		for (int i = 0; i < size; i++) {
