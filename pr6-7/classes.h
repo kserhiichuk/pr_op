@@ -15,7 +15,7 @@ public:
     File(string name);
     void add(int);
     int* read(int&);
-    void write_from_another(int, File*);
+    void write_from_another(int, File* , File*);
     string get_filename();
     void clear();
     void is_open();
